@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .sidebar{
+        width: 50%;
+    }
+    .toggle{
+        margin-bottom: 1.5rem;
+    }
+}
+

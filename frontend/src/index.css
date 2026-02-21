@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #212121;
+}
+.eye-icon{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
