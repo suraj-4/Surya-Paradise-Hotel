@@ -1,0 +1,89 @@
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+  --black: #000;
+  --white: #fff;
+
+  --primary: #3BC1A8;
+  --secondary: #249E94;
+  --tertiary: #005461;
+
+  /* --primary: #000;
+  --secondary: #FFD400;
+  --tertiary: #F2B50B; */
+
+  --poppins: "Poppins", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+
+  --transition: all 0.3s ease;
+}
+
+body{
+  font-family: var(--poppins);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0!important;
+  font-family: var(--montserrat);
+}
+h1{
+  font-size: 2.2rem;
+  font-weight: 700!important;
+}
+h2{
+  font-size: 2;
+  font-weight: 600!important;
+}
+h3{
+  font-size: 1.8rem;
+  font-weight: 600!important;
+}
+h4{
+  font-size: 1.6rem;
+  font-weight: 500!important;
+}
+h5{
+  font-size: 1.4rem;
+  font-weight: 500!important;
+}
+h6{
+  font-size: 1.2rem;
+  font-weight: 500!important;
+}
+
+label{
+  font-size: 1rem;
+  color: var(--black);
+}
+::placeholder{
+  font-weight: 500;
+}
+input.custom_input,select.custom_input,textarea.custom_input{
+  :focus{
+    outline: none!important;
+    border-color: transparent!important;
+  }
+  :focus-visible{
+    outline: none!important;
+    border-color: transparent!important;
+  }
+  :hover{
+    outline: none!important;
+    border-color: transparent!important;
+  }
+}
+
+.FillableBtn{
+  color: var(--white);
+  background-color: var(--tertiary);
+  transition: var(--transition);
+  &:hover{
+    box-shadow: inset 0 0 10px #0000005e;
+    color: var(--white)!important;
+    border-color: var(--secondary)!important;
+    background-color: var(--secondary)!important;
+  }
+}

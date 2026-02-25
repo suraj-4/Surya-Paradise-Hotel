@@ -1,30 +1,14 @@
-
 import { Routes, Route } from "react-router-dom";
-import Login from "../pages/auth/Login";
-import Register from "../pages/auth/Register";
-import Dashboard from "../pages/Dashboard";
-import ProtectedRoute from "../components/ProtectedRoute";
-import Welcome from "../pages/welcome";
-import Profile from "../pages/auth/Profile";
-import ForgotPassword from "../pages/auth/Forgot-Password";
+import AuthRoutes from "./AuthRoutes";
+import PrivateRoutes from "./PrivateRoutes";
 
-export default function AppRoutes() {
+function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Welcome />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/forgot-password" element={<ForgotPassword />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/dashboard" element={
-        <ProtectedRoute>
-          <Dashboard />
-        </ProtectedRoute>
-      } />
-      <Route path="/profile" element={
-        <ProtectedRoute>
-          <Profile />
-        </ProtectedRoute>
-      } />
+      <Route path="/auth/*" element={<AuthRoutes />} />
+      <Route path="/*" element={<PrivateRoutes />} />
     </Routes>
   );
 }
+
+export default AppRoutes;
