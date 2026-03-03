@@ -1,8 +1,5 @@
 
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 :root{
   --black: #000;
@@ -22,9 +19,13 @@
   --transition: all 0.3s ease;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: var(--poppins);
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0!important;
   font-family: var(--montserrat);
@@ -76,6 +77,16 @@ input.custom_input,select.custom_input,textarea.custom_input{
   }
 }
 
+.custom_primary_bg{
+  background-color: var(--primary);
+}
+.custom_secondary_bg{
+  background-color: var(--secondary);
+}
+.custom_tertiary_bg{
+  background-color: var(--tertiary);
+}
+
 .FillableBtn{
   color: var(--white);
   background-color: var(--tertiary);
@@ -85,5 +96,31 @@ input.custom_input,select.custom_input,textarea.custom_input{
     color: var(--white)!important;
     border-color: var(--secondary)!important;
     background-color: var(--secondary)!important;
+  }
+}
+input:focus, 
+input:hover, 
+select:focus, 
+select:hover, 
+textarea:focus, 
+textarea:focus, 
+textarea:hover {
+  outline: none!important;
+  border-color: var(--white)!important;
+  box-shadow: none!important;
+}
+button:focus {
+  outline: none!important;
+  border-color: transparent!important;
+}
+.collapsed_btn .ant-btn-icon{
+  display: flex;
+}
+
+.ant-layout-header .ant-input-affix-wrapper{
+  outline: none!important;
+  border-color: var(--white)!important;
+  input:placeholder{
+    color: var(--white)!important;
   }
 }

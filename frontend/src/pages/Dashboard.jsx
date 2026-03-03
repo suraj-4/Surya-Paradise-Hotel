@@ -1,7 +1,13 @@
+import PageHeading from "@/component/ui/PageHeading";
+import HotelStats from "@/component/share/HotelStats";
+
 function Dashboard() {
   return (
-    <div className="w-full h-screen bg-amber-200">
-      <h1>Dashboard</h1>
+    <div className="w-full flex flex-col gap-5">
+      <PageHeading title="Dashboard"/>
+
+      <HotelStats/>
+
     </div>
   )
 }
