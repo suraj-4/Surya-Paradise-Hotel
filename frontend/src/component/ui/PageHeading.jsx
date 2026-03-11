@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function PageHeading({ title, buttonText, className, to, btnClassName }) {
   return (
-    <div className="pb-4 border-b border-black flex items-center justify-between">
+    <div className="pb-4 mb-5 border-b border-black flex items-center justify-between">
       <h1 className={`text-gray-800 text-xl font-semibold ${className}`}>
         {title}
       </h1>
