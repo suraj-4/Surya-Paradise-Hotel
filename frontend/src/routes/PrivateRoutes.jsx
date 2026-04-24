@@ -6,6 +6,8 @@ import Rooms from "@/pages/Rooms";
 import Bookings from "@/pages/Bookings";
 import Hotels from "@/pages/Hotels";
 import Staff from "@/pages/Staff";
+import BillingList from "@/pages/Billings/BillingList";
+import GenerateBill from "@/pages/Billings/GenerateBill";
 
 function PrivateRoutes() {
   return (
@@ -16,6 +18,8 @@ function PrivateRoutes() {
         <Route path="/rooms" element={<Rooms />} />
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/staff" element={<Staff />} />
+        <Route path="/billing" element={<BillingList />} />
+        <Route path="/billings/generate" element={<GenerateBill />} />
         <Route path="/*" element={<PageNotFound />} />
       </Route>
     </Routes>

@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import { useNavigate } from "react-router-dom";
-import { CalendarDays, HomeIcon, HotelIcon, LayoutDashboard, LucideFileUser } from "lucide-react";
+import { Calculator, CalendarDays, HomeIcon, HotelIcon, LayoutDashboard, LucideFileUser } from "lucide-react";
 import FillableBtn from "../ui/CustomButton";
 
 const { Sider } = Layout;
@@ -45,6 +45,11 @@ const DashboardSidebar = ({ collapsed }) => {
             key: "/staff",
             icon: <LucideFileUser className="w-5 h-5" />,
             label: <span className="font-medium">Staff</span>,
+          },
+          {
+            key: "/billing",
+            icon: <Calculator className="w-5 h-5" />,
+            label: <span className="font-medium">Billing</span>,
           },
         ]}
       />

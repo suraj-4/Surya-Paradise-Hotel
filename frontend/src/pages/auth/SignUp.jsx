@@ -26,7 +26,7 @@ function SignUp() {
               <CustomInput type='password' id="password" name="password" placeholder="Enter your password" prefix={<LockKeyhole className='text-gray-300'/>}/>
             </div>
             <div className="mb-5">
-              <FillableBtn className='w-full uppercase'>
+              <FillableBtn className='w-full uppercase !py-3'>
                 Register
               </FillableBtn>
             </div>

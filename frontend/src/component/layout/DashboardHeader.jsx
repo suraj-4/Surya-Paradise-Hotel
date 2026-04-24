@@ -95,7 +95,7 @@ const DashboardHeader = ({ collapsed, setCollapsed }) => {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <img
-              src="public/img/hotel-logo-small.png"
+              src="/public/img/Hotel-Logo-trasparent.png"
               alt="Hotel Logo"
               style={{
                 width: collapsed ? "40px" : "40px",

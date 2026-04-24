@@ -20,10 +20,12 @@ return new class extends Migration
             $table->string('state');
             $table->string('country');
             $table->string('zip_code');
+            $table->string('rating')->nullable();
             $table->string('phone', 20)->nullable();
             $table->string('email', 150)->nullable();
             $table->foreignId('owner_id')->constrained('users')->onDelete('cascade');
-            $table->string('status')->default('active'); // instead of enum
+            $table->string('status')->default('active');
+            $table->enum('status', ['deactive', 'underConstruction'])->default('active');
             $table->timestamps();
         });
 

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('password');
-            $table->enum('role', ['guest', 'admin', 'owner'])->default('guest');
+            $table->enum('role', ['guest', 'owner','manager','receptionist','staff','admin'])->default('guest');
             $table->timestamps();
         });
     }

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Table, Input, Card, Dropdown, Button, Upload } from "antd";
+import { Table, Input, Card } from "antd";
 import PageHeading from '@/component/ui/PageHeading'
-import { Import, MoreVertical, Search } from 'lucide-react';
-import ImportExport from '@/component/share/ImportExport';
+import { Search } from 'lucide-react';
 import ImportExportIcon from '@/component/share/importExportIcon';
 
 function Hotels() {
@@ -37,32 +36,6 @@ function Hotels() {
       item.city.toLowerCase().includes(searchText.toLowerCase())
   );
 
-  // const { handleExport, uploadProps } = ImportExport({
-  //   data,
-  //   onImport: (importedData) => {
-  //     console.log("Imported:", importedData);
-  //   },
-  //   fileName: "hotels",
-  // });
-
-  // const items = [
-  //   {
-  //     key: "import",
-  //     label: (
-  //       <Upload {...uploadProps}>
-  //         Import
-  //       </Upload>
-  //     ),
-  //     icon: <Import size={20} />,
-  //   },
-  //   {
-  //     key: "export",
-  //     label: "Export",
-  //     icon: <Import size={20} className="rotate-180" />,
-  //     onClick: handleExport,
-  //   },
-  // ];
-
   return (
     <>
       <PageHeading title="Hotels"/>
@@ -75,11 +48,6 @@ function Hotels() {
             prefix={<Search className='text-black'/>}
             onChange={(e) => setSearchText(e.target.value)}
           />
-          {/* <Dropdown menu={{ items }} trigger={["click"]}>
-            <Button className='border-0 shadow-0'>
-              <MoreVertical size={20} />
-            </Button>
-          </Dropdown> */}
           <ImportExportIcon data={data} fileName="hotels"/>
         </div>
         <Table
@@ -94,6 +62,8 @@ function Hotels() {
           }}
         />
       </Card>
+
+
     </>
   )
 }
