@@ -1,7 +1,7 @@
 import { Layout, Menu } from "antd";
 import { useNavigate } from "react-router-dom";
 import { Calculator, CalendarDays, HomeIcon, HotelIcon, LayoutDashboard, LucideFileUser } from "lucide-react";
-import FillableBtn from "../ui/CustomButton";
+import {FillableBtn} from "../ui/CustomButton";
 
 const { Sider } = Layout;
 

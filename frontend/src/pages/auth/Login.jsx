@@ -3,7 +3,7 @@ import { Card, Form, message } from 'antd';
 import CustomInput from '../../component/ui/CustomInput';
 import CustomLabel from '../../component/ui/CustomLabel';
 import { Mail, User, LockKeyhole } from 'lucide-react';
-import FillableBtn from '../../component/ui/CustomButton';
+import {FillableBtn} from '../../component/ui/CustomButton';
 import { Link, useNavigate } from 'react-router-dom';
 import { loginUser } from '@/api/authApi';
 
